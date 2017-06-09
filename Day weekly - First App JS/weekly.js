@@ -1,6 +1,9 @@
+//SEBELUM MENJALANKAN PROGRAM
+//RUN PROGRAM MENGGUNAKAN CLIENTBASE seperti JSBIN.com
+//DAN TIDAK DAPAT MENGGUNAKAN prompt maupun alert di dalam pengulangan FOR
+
 //-------------Pseudocode
 /*
-
 1. Masukan nama pada variabel namaAnda sebagai tanda memulainya permaianan dan tidak boleh kosong
 2. Jika nama tidak kosong maka tampilkan "selamat namaAnda Mulai"
 3. Tampilkan cerita "pada suatu hari namaAnda tersesat dan..." "...menemukan 3 persimpangan"
@@ -118,13 +121,13 @@ function cerita (){
       if(jalan==jalanKanan){
           for(i=0; i<panjangKanan; i++){
             console.log("Anda tidak beruntung, anda telah mati diserang "  +arrayKanan[i].ability );
-            alert("Anda tidak beruntung, anda telah mati diserang "  +arrayKanan[i].ability);
+            //alert("Anda tidak beruntung, anda telah mati diserang "  +arrayKanan[i].ability);
 
             console.log("sungguh serangan yang sangat "+arrayKanan[i].level);
-            alert("sungguh serangan yang sangat "+arrayKanan[i].level);
+            //alert("sungguh serangan yang sangat "+arrayKanan[i].level);
 
             console.log(arrayKanan[i].binatang+" Sungguh mematikan");
-            alert(arrayKanan[i].binatang+" Sungguh mematikan");
+            //alert(arrayKanan[i].binatang+" Sungguh mematikan");
           }
 
       }
@@ -142,32 +145,32 @@ function cerita (){
                 if(quest == 9 ){
 
                   console.log(arrayLurus[i].binatang+ "menyerang..!");
-                  alert(arrayLurus[i].binatang+ "menyerang ..!");
+                  //alert(arrayLurus[i].binatang+ "menyerang ..!");
 
                   console.log("Banyak "+arrayLurus[i].ability+ "an terus menerus");
-                  alert("Banyak "+arrayLurus[i].ability+ "an terus menerus");
+                  //alert("Banyak "+arrayLurus[i].ability+ "an terus menerus");
 
                   console.log("Selamat anda "+arrayLurus[i].level+" dari semua serangan");
-                  alert("Selamat anda "+arrayLurus[i].level+" dari semua serangan");
+                  //alert("Selamat anda "+arrayLurus[i].level+" dari semua serangan");
 
                   console.log("SELAMAT "+namaAnda+" Anda berhasil menemukan jalan keluar");
-                  alert("SELAMAT "+namaAnda+" Anda berhasil menemukan jalan keluar");
+                  //alert("SELAMAT "+namaAnda+" Anda berhasil menemukan jalan keluar");
                 }
                 else{
                   console.log("Sayang sekali anda tidak dapat berhasil mengalahkan "+arrayLurus[i].binatang );
-                  alert("Sayang sekali anda tidak dapat berhasil mengalahkan "+arrayLurus[i].binatang);
+                  //alert("Sayang sekali anda tidak dapat berhasil mengalahkan "+arrayLurus[i].binatang);
 
                   console.log("Dan anda mati! GAME OVER");
-                  alert("Dan anda mati! GAME OVER");
+                  //alert("Dan anda mati! GAME OVER");
                 }
               }
             }
             else{
               console.log("anda tidak melakukan apa apa. dan anda mati! GAME OVER");
-              alert("anda tidak melakukan apa apa. dan anda mati! GAME OVER");
+              //alert("anda tidak melakukan apa apa. dan anda mati! GAME OVER");
             }
             console.log("SELAMAT "+namaAnda+" Anda berhasil menemukan jalan keluar");
-            alert("SELAMAT "+namaAnda+" Anda berhasil menemukan jalan keluar");
+            //alert("SELAMAT "+namaAnda+" Anda berhasil menemukan jalan keluar");
 
       }
       else if (jalan == jalanKiri){
@@ -176,10 +179,10 @@ function cerita (){
 
         for(i=0; i<panjangKiri; i++){
           console.log("selamat datang di taman "+arrayKiri[i].binatang);
-          alert("selamat datang di taman "+arrayKiri[i].binatang);
+          //alert("selamat datang di taman "+arrayKiri[i].binatang);
         }
         console.log("SELAMAT "+namaAnda+" Anda berhasil menemukan jalan keluar");
-        alert("SELAMAT "+namaAnda+" Anda berhasil menemukan jalan keluar");
+        //alert("SELAMAT "+namaAnda+" Anda berhasil menemukan jalan keluar");
       }
   }
  return ;
